@@ -1,25 +1,41 @@
 <p align="center">
-<a href= "https://dev.to/ari_hacks"><img src="https://img.icons8.com/windows/32/000000/dev.png"/></a>
+  <img width="250" src="https://media.giphy.com/media/jIgXf4hgbHCeKiXpvt/giphy.gif">
 </p>
 
-```javascript
-const khadijaSajid = {
-   pronouns: "she" | "her",
-   code: [Javascript, HTML, CSS, Python, Java],
-   technologies: {
-      frontEnd: {
-         js: ["React"],
-         css: ["Bootstrap"]
-      },
-      backEnd: {
-         js: ["Node", "Express"],
-         misc: ["Git", "Puppeteer", "Swing", "Panda3D"]
-      },
-      databases: ["MongoDB", "mySQL", "Firebase"],
-   },
-   linkedIn: "khadijasajid",
-   hobbies: ["Valorant", "Shows"]
-   
-};
+```python
+
+from dataclasses import dataclass
+from typing import Tuple
+
+
+class Meta(type):
+    def __new__(cls, name, bases, attrs):
+        new_cls = super().__new__(cls, name, bases, attrs)
+        return dataclass(unsafe_hash=True, frozen=True)(new_cls)
+
+
+class Bio(metaclass=Meta):
+    name        : str = "Khadija Sajid"
+    base        : str = "Karachi, Pakistan"
+    hobbies     : str = "Valorant and watching shows"
+
+
+
+class Stack(metaclass=Meta):
+    languages   : Tuple[str, ...] = ("Python", "Java", "Javascript", "HTML", "CSS")
+    frontend    : Tuple[str, ...] = ("React")
+    backend     : Tuple[str, ...] = ("Node", "Express")
+    databases   : Tuple[str, ...] = ("MySQL", "Mongo")
+    misc        : Tuple[str, ...] = ("Git", "Puppeteer", "Swing", "Panda3D", "Bootstrap")
+
+
+
+class Social(metaclass=Meta):
+    linkedin    : str = "khadijasajid"
 ```
-</br></br>
+
+<h3> 🤝🏻 Connect with Me </h3>
+
+<p >
+&nbsp; <a href="https://www.linkedin.com/in/khadijasajid/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
+</p>
