@@ -1,7 +1,3 @@
-<p align="center">
-  <img width="250" src="https://media.giphy.com/media/jIgXf4hgbHCeKiXpvt/giphy.gif">
-</p>
-
 ```python
 
 from dataclasses import dataclass
@@ -38,4 +34,8 @@ class Social(metaclass=Meta):
 
 <p >
 &nbsp; <a href="https://www.linkedin.com/in/khadijasajid/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
+</p>
+
+<p align="center">
+  <img width="250" src="https://media.giphy.com/media/jIgXf4hgbHCeKiXpvt/giphy.gif">
 </p>
