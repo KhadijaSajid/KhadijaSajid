@@ -2,7 +2,6 @@
 
 from dataclasses import dataclass
 from typing import Tuple
-uwu
 
 
 class Meta(type):
