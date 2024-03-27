@@ -12,7 +12,7 @@ class Meta(type):
 
 class Bio(metaclass=Meta):
     name        : str = "Khadija Sajid"
-    base        : str = "Karachi, Pakistan"
+    base        : str = "Pakistan"
     hobbies     : str = "Valorant and watching shows"
 
 
