@@ -22,7 +22,7 @@ class Stack(metaclass=Meta):
     frontend    : Tuple[str, ...] = ("React")
     backend     : Tuple[str, ...] = ("Node", "Express")
     databases   : Tuple[str, ...] = ("MySQL", "MongoDb", "Firebase")
-    misc        : Tuple[str, ...] = ("Git", "Puppeteer", "Swing", "Panda3D", "Bootstrap", "SASS")
+    misc        : Tuple[str, ...] = ("Git", "Puppeteer", "Three.js", "Swing", "Panda3D", "Bootstrap", "SASS")
 
 
 
